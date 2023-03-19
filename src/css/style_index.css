@@ -32,6 +32,15 @@
         color: dimgrey;
     }
 
+    .comingsoon{
+        position: fixed; 
+        bottom: 40%; 
+        left: 15%;
+        width: 100%; 
+        z-index: 997;
+        font-size: 40px;
+    }
+
 /*  Header
     ========================================================================== */
 
@@ -94,7 +103,7 @@
     ===================================== */
 
     .cover{
-        height: 50%;
+        height: 40%;
         background-size: cover;
         -o-background-size: cover;
         -moz-background-size: cover;
@@ -113,7 +122,9 @@
         width: 100%; 
         position: relative; 
         z-index: 1; 
-        padding: 0 20px}
+        padding: 0 20px
+    }
+
     .cover__caption__copy{ 
         display: table-cell; 
         vertical-align: middle; 
@@ -121,12 +132,6 @@
         color: #fff; 
     }
     
-    .cover--single{
-        height: 50%
-    }
-    .cover--single h1{
-        font-size: 42px;
-    }
 
     /* Card
     ===================================== */
@@ -140,10 +145,13 @@
         margin:0 1.5%; 
         background: #333;
         float: left;
+        border-radius: 5px;
     }
     .card_image{
         width: 100%; 
         height: auto;
+        max-width:400px;
+        max-height:270px;
     }
     .card_copy{
         padding: 5px 20px;
@@ -161,17 +169,21 @@
     }
 
 /*  Footer
-    ========================================================================== */
-
+    ========================================================================== */ 
+    footer{
+        position: fixed; 
+        bottom: 0; 
+        width: 100%; 
+        z-index: 998;
+    }
     .footer{
         background: #333; 
-        padding: 30px;
+        padding: 15px;
         color: #fff; 
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
-    }
-    
+    }    
 
 /*  ClearFIX
     ===================================== */
