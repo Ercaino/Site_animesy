@@ -1,0 +1,153 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
+    Stylesheet: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css
+*/
+
+/*  Document
+    ========================================================================== */
+
+    @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&');
+
+    *{
+        font-family: 'Kalam', cursive;
+        color: #fff;
+    }
+    html, body{
+        height: 100%;
+    }
+    body{
+        background: url(../asset/image/Night.gif) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+/*  General
+    ===================================== */
+
+    a{
+        color: #fff;
+        font-weight: 400;
+    }
+    a:hover{
+        color: dimgrey;
+    }
+
+/*  Header
+    ========================================================================== */
+
+    .header{
+        background: #333;
+    }
+
+    .header_logo{
+        color: #fff;
+        float: left;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+    .logo_img{
+        padding: -15px;
+        margin-bottom: -5px;
+        max-width:20px;
+        max-height:20px;
+    }
+    .header_menu{
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header_menu_item{
+        display: inline-block;
+    }
+    .header_menu_item a{
+        color: #fff;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+    .header_menu_item a:hover{
+        background: #000;
+        color: grey;
+    }
+
+    .header_login{
+        padding: 0 0 0 15px;
+        margin-bottom: -5px;
+        max-width:200px;
+        max-height:20px;
+    }
+    .header_login:hover{
+        background: #000;
+        color: grey;
+    }
+
+/*  Main
+    ========================================================================== */
+
+    /* Card
+    ===================================== */
+    .cards{
+        max-width: 1200px;
+        margin: 40px auto;
+        color: #fff;
+    }
+    .card{
+        width: 30%; 
+        margin:0 1.5%; 
+        background: #333;
+        float: left;
+    }
+    .card_image{
+        width: 100%; 
+        height: auto;
+    }
+    .card_copy{
+        padding: 5px 20px;
+    }
+    .card_title{
+        background: #585858;
+        width: 30%; 
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+    .card_copy p{
+        text-align: center;
+    }
+
+/*  Footer
+    ========================================================================== */
+
+    .footer{
+        background: #333; 
+        padding: 30px;
+        color: #fff; 
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+/*  ClearFIX
+    ===================================== */
+
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+        }
+    * html .clearfix             { zoom: 1; } /* IE6 */
+    *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+    *,
+    *:before,
+    *:after {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
