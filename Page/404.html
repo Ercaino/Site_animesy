@@ -21,30 +21,37 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="../src/css/style_404.css">
-    <link rel="stylesheet" href="../src/css/style_loader_error.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<body class="bg">
     
-    <section>
-        <div class="error">
-            <div class="img">
-                <img src="../src/asset/image/errorimg.png" alt="error png">
+    <div class="stars">
+        <div class="custom-navbar">
+            <div class="brand-logo">
+                <a href="../index.html">
+                    <img src="../src/asset/image/AnimesylogoB.png" width="60px">
+                </a>
             </div>
-            <div class="text">
-                <div class="title-error">
-                    <h1></h1>
-                </div>
-                <div class="text-error">
-                    <p></p>
-                </div>
-                <div class="container">
-                    <div class="loader"></div>
-                    <div class="loader"></div>
-                    <div class="loader"></div>
-                </div>
+            <div class="navbar-links">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="Wiki/Wiki.html">Wiki</a></li>
+                  <li><a href="Streaming/Streaming.html">Streaming</a></li>
+                  <li><a href="Login/Login.html" class="btn-request">Login
+                    <img src="../src/asset/image/errorimg.png" width="20px" alt="Login">
+                  </a></li>
+                </ul>
             </div>
         </div>
-    </section>
+        <div class="central-body">
+            <img class="image-404" src="../src/asset/image/404.svg" width="300px">
+            <a href="../index.html" class="btn-go-home">GO BACK HOME</a>
+        </div>
+
+    </div>
+
+    <script  src="./script.js"></script>
 
 </body>
 </html>

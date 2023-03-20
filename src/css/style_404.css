@@ -1,40 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&');
-*{
+
+html, body{
     margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
     font-family: 'Kalam', cursive;
-    color: #fff;
+    font-weight: 300;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    /* background: #00ff00; */
-    background: url('../asset/image/Backerror.gif')no-repeat;
-    background-position: center;
+.bg{
+    background: url(../asset/image/Backerror.gif);
+    background-repeat: repeat-x;
     background-size: cover;
+    background-position: left top;
+    height: 100%;
+    overflow: hidden;
 }
-.error{
+
+.custom-navbar{
+    padding-top: 15px;
+}
+.brand-logo{
+    margin-left: 25px;
+    margin-top: 5px;
+    display: inline-block;
+    padding: -20px;
+}
+
+.navbar-links{
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    /* overflow: hidden; */
+    background-color: #333;
+    display: flex; 
+    align-items: center; 
+}
+li {
+    float: left;
+    padding: 5px 20px;
+}
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 15px;
+    font-weight: 900;
+    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+li a:hover {
+    color: grey;
+}
+li a img{
+    text-align: center;    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.btn-request{
+    padding: 10px 25px;
+    border: 1px solid #000;
+    font-weight: 400;
+}
+.btn-request:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.btn-go-home{
     position: relative;
-    width: 70%;
-    height: 700px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 200;
+    margin: 15px auto;
+    width: 100px;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    font-weight: 400;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 11px;
+    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
-.error .img{
-    position: absolute;
-    top: 10%;
-    left: 15px;
-    border-bottom: 2px solid #fff;
+.btn-go-home:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.central-body{
+/*    width: 100%;*/
+    padding: 17% 5% 10% 5%;
+    text-align: center;
+}
+
+.image-404{
+    position: relative;
+    z-index: 100;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar-links{
+        display: none;
+    }
+    
+    .custom-navbar{
+        text-align: center;
+    }
+    
+    .brand-logo img{
+        width: 120px;
+    }
+        
+    .central-body{
+        padding-top: 25%;
+    }
 }
 
