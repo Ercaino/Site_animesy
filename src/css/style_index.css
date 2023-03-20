@@ -136,7 +136,7 @@
     /* Card
     ===================================== */
     .cards{
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 40px auto;
         color: #fff;
     }
@@ -145,11 +145,10 @@
         margin:0 1.5%; 
         background: #333;
         float: left;
-        border-radius: 5px;
     }
     .card_image{
         width: 100%; 
-        height: auto;
+        height: 150px;
         max-width:400px;
         max-height:270px;
     }
