@@ -9,7 +9,7 @@
 <div align="center"><p>Copyright 2023 © Ercaino | Fulvio</p></div> 
 &nbsp;
 
-Sito Web basato su puro HTML e CSS, utilizzato come esercizio presso il Polo Tecnologico Imperiese 
+Website based on pure HTML - CSS - JS, used as an exercise at the Imperia Technological Pole 
 ***
 <!--INFORMATION-->
 ```
