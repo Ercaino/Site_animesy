@@ -62,7 +62,7 @@
                 <img src="src/asset/image/imgwiki.jpeg" class="card__image" alt="img wiki">
                 <div class="card__overlay">
                   <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d/></svg>                     
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath1"/></svg>                     
                     <img class="card__thumb" src="src/asset/image/imgwiki.jpeg" alt="thumb">
                     <div class="card__header-text">
                       <h3 class="card__title">Wiki</h3>      
@@ -79,7 +79,7 @@
                 <img src="src/asset/image/imginfo.jpeg" class="card__image" alt="img info">
                 <div class="card__overlay">        
                   <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d/></svg>                 
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath2"/></svg>                 
                     <img class="card__thumb" src="src/asset/image/imginfo.jpeg" alt="thumb">
                     <div class="card__header-text">
                       <h3 class="card__title">Me</h3>
@@ -95,7 +95,7 @@
                 <img src="src/asset/image/imgstream.jpeg" class="card__image" alt="img stream">
                 <div class="card__overlay">
                   <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d/></svg>                     
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath3"/></svg>                     
                     <img class="card__thumb" src="src/asset/image/imgstream.jpeg" alt="thumb">
                     <div class="card__header-text">
                       <h3 class="card__title">Streaming</h3>
@@ -132,6 +132,11 @@
 
                 });
         });
+    </script>
+    <script>
+        document.getElementById("myPath1").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        document.getElementById("myPath2").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        document.getElementById("myPath3").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
     </script>
 </body>
 </html>

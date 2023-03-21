@@ -209,7 +209,7 @@
       
       .card__arc path {
         fill: var(--surface-color);
-        d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        /* d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z"); Non più supportato da css, creato via js*/ 
       }       
       
       .card:hover .card__header {
