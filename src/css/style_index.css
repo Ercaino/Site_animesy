@@ -41,6 +41,7 @@
         font-size: 40px;
     }
 
+
 /*  Header
     ========================================================================== */
 
@@ -165,12 +166,12 @@
         text-decoration: none;
       }
       
-      .card__image {      
+      .card_image {      
         width: 100%;
         height: auto;
       }
       
-      .card__overlay {
+      .card_overlay {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -182,11 +183,11 @@
         transition: .2s ease-in-out;
       }
       
-      .card:hover .card__overlay {
+      .card:hover .card_overlay {
         transform: translateY(0);
       }
       
-      .card__header {
+      .card_header {
         position: relative;
         display: flex;
         align-items: center;
@@ -198,7 +199,7 @@
         transition: .2s ease-in-out;
       }
       
-      .card__arc {
+      .card_arc {
         width: 80px;
         height: 80px;
         position: absolute;
@@ -207,29 +208,29 @@
         z-index: 1;
       }
       
-      .card__arc path {
+      .card_arc path {
         fill: var(--surface-color);
         /* d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z"); Non più supportato da css, creato via js*/ 
       }       
       
-      .card:hover .card__header {
+      .card:hover .card_header {
         transform: translateY(0);
       }
       
-      .card__thumb {
+      .card_thumb {
         flex-shrink: 0;
         width: 50px;
         height: 50px;      
         border-radius: 50%;      
       }
       
-      .card__title {
+      .card_title {
         font-size: 1em;
         margin: 0 0 .3em;
         color: #6A515E;
       }
       
-      .card__tagline {
+      .card_tagline {
         display: block;
         margin: 1em 0;
         font-family: "MockFlowFont";  
@@ -237,12 +238,12 @@
         color: #D7BDCA;  
       }
       
-      .card__status {
+      .card_status {
         font-size: .8em;
         color: #D7BDCA;
       }
       
-      .card__description {
+      .card_description {
         padding: 0 2em 2em;
         margin: 0;
         color: #D7BDCA;
@@ -268,7 +269,26 @@
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }    
+
+    .validator{
+        text-align: center;    
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .btn-request{
+        padding: 10px 25px;
+        border: 1px solid #000;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .btn-request:hover{
+        background-color: #000;
+        color: #fff;
+        transform: scale(1.05);
+        box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+    }
 
 /*  ClearFIX
     ===================================== */

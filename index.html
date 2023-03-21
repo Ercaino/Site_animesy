@@ -45,7 +45,7 @@
 	</header>
 
     <!-- Main -->
-    <section class="cover">
+    <section class="cover clearfix">
 		<div class="cover__filter"></div>
 		<div class="cover__caption">
 			<div class="cover__caption__copy">
@@ -55,55 +55,55 @@
 		</div>
 	</section>
 
-    <section class="center">
+    <section class="clearfix">
         <ul class="cards">
             <li>
               <a href="Page/Wiki/Wiki.html" class="card">
-                <img src="src/asset/image/imgwiki.jpeg" class="card__image" alt="img wiki">
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath1"/></svg>                     
-                    <img class="card__thumb" src="src/asset/image/imgwiki.jpeg" alt="thumb">
-                    <div class="card__header-text">
-                      <h3 class="card__title">Wiki</h3>      
-                      <span class="card__tagline">Animesy Wiki</span>       
-                      <span class="card__status">Updating</span>
+                <img src="src/asset/image/imgwiki.jpeg" class="card_image" alt="img wiki">
+                <div class="card_overlay">
+                  <div class="card_header">
+                    <svg class="card_arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath1"/></svg>                     
+                    <img class="card_thumb" src="src/asset/image/imgwiki.jpeg" alt="thumb">
+                    <div class="card_header-text">
+                      <h3 class="card_title">Wiki</h3>      
+                      <span class="card_tagline">Animesy Wiki</span>       
+                      <span class="card_status">Updating</span>
                     </div>
                   </div>
-                  <p class="card__description">A wiki about some anime, updated periodically for a unique experience!</p>
+                  <p class="card_description">A wiki about some anime, updated periodically for a unique experience!</p>
                 </div>
               </a>      
             </li>
             <li>
               <a href="#" class="card">
-                <img src="src/asset/image/imginfo.jpeg" class="card__image" alt="img info">
-                <div class="card__overlay">        
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath2"/></svg>                 
-                    <img class="card__thumb" src="src/asset/image/imginfo.jpeg" alt="thumb">
-                    <div class="card__header-text">
-                      <h3 class="card__title">Me</h3>
-                      <span class="card__status">Ercaino | Yukiry_</span>
+                <img src="src/asset/image/imginfo.jpeg" class="card_image" alt="img info">
+                <div class="card_overlay">        
+                  <div class="card_header">
+                    <svg class="card_arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath2"/></svg>                 
+                    <img class="card_thumb" src="src/asset/image/imginfo.jpeg" alt="thumb">
+                    <div class="card_header-text">
+                      <h3 class="card_title">Me</h3>
+                      <span class="card_status">Ercaino | Yukiry_</span>
                     </div>
                   </div>
-                  <p class="card__description">GitHub: https://github.com/Ercaino<br>Telegram: https://t.me/Eternithyy<br>Discord: Eℝcαi𝓷o#4311</p>
+                  <p class="card_description">GitHub: https://github.com/Ercaino<br>Telegram: https://t.me/Eternithyy<br>Discord: Eℝcαi𝓷o#4311</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="Page/Streaming/Streaming.html" class="card">
-                <img src="src/asset/image/imgstream.jpeg" class="card__image" alt="img stream">
-                <div class="card__overlay">
-                  <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath3"/></svg>                     
-                    <img class="card__thumb" src="src/asset/image/imgstream.jpeg" alt="thumb">
-                    <div class="card__header-text">
-                      <h3 class="card__title">Streaming</h3>
-                      <span class="card__tagline">Animesy Streaming</span>            
-                      <span class="card__status">Updating</span>
+                <img src="src/asset/image/imgstream.jpeg" class="card_image" alt="img stream">
+                <div class="card_overlay">
+                  <div class="card_header">
+                    <svg class="card_arc" xmlns="http://www.w3.org/2000/svg"><path d id="myPath3"/></svg>                     
+                    <img class="card_thumb" src="src/asset/image/imgstream.jpeg" alt="thumb">
+                    <div class="card_header-text">
+                      <h3 class="card_title">Streaming</h3>
+                      <span class="card_tagline">Animesy Streaming</span>            
+                      <span class="card_status">Updating</span>
                     </div>
                   </div>
-                  <p class="card__description">Streaming section, enjoy some free time, finally watch a series without excuses! </p>
+                  <p class="card_description">Streaming section, enjoy some free time, finally watch a series without excuses! </p>
                 </div>
               </a>
             </li>   
@@ -113,8 +113,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div>
-            <p>http://sappiafulvio.altervista.org/index.html</p>
+        <div class="validator">
+            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fsappiafulvio.altervista.org%2Findex.html" class="btn-request">Validator</a>
         </div>
         <div>
             <p>Copyright - 2023 © Ercaino | Fulvio</p>
@@ -122,21 +122,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-                $(".header__icon-bar").click(function(e){
-
-                    $(".header__menu").toggleClass('is-open');
-                    e.preventDefault();
-
-                });
-        });
-    </script>
-    <script>
-        document.getElementById("myPath1").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-        document.getElementById("myPath2").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-        document.getElementById("myPath3").setAttribute("d", "M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-    </script>
+    <script src="./src/js/script_card.js"></script>
 </body>
 </html>
