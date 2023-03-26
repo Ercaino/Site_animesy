@@ -129,6 +129,18 @@ li a img{
     pointer-events: none;
 }
 
+.image-500{
+    position: relative;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.image-401{
+    position: relative;
+    z-index: 100;
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 600px){
     .navbar-links{
         display: none;
